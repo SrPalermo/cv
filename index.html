@@ -1,90 +1,126 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Abner's Personal Web Site</title>
-  </head>
-  <body>
-    <table cellspacing="20">
-      <tr>
-        <td>
-          <img src="profile-modified.png" alt="abner profile picture" width="240px">
-        </td>
-        <td>
-          <table>
-            <tr>
-              <td>
-                <h1>Abner Rodas</h1>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Abner Ernesto Rodas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --color1: #00224D;
+      --color2: #B12C00;
+      --color3: #EB5B00;
+      --color4: #FFCC00;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  
+  <!-- Header -->
+  <header class="bg-[var(--color1)] text-white py-8 shadow-lg">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+      <div>
+        <h1 class="text-3xl font-bold">Abner Ernesto Rodas</h1>
+        <p class="text-lg text-[var(--color4)]">Desarrollador Backend & Full Stack</p>
+      </div>
+      <div class="mt-4 md:mt-0 text-right">
+        <p>Email: <a href="mailto:abnerrodas156@gmail.com" class="text-[var(--color4)]">abnerrodas156@gmail.com</a></p>
+        <p>Tel: (+502) 4608-5507</p>
+        <p>Villa Nueva, Guatemala</p>
+      </div>
+    </div>
+  </header>
 
-                <p>Desarrollador y Programador <em><a href="https://www.linkedin.com/in/abner-ernesto-rodas-791789170/">full stack</a><br>
-                   in <strong>Node.js and React.js</strong></em></p>
+  <!-- Perfil -->
+  <section class="py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-[var(--color2)] mb-4">Presentación</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Profesional en ingeniería de sistemas con experiencia en desarrollo de soluciones backend y front end, especializado en tecnologías modernas como .NET Core C#, Angular, TypeScript, SQL Server, Oracle, Docker, y APIs RESTful. Apasionado por la optimización de rendimiento, la calidad de código y la entrega continua de productos de software.
+      </p>
+    </div>
+  </section>
 
-                <p>A lo largo de mi carrera he podido desarrollar diversos programas <br>
-                   en el ámbito de Csharp, combinando habilidades de Javascript.</p>
-              
-                <p> <strong><a href="contact.html">CONTACTO</a></strong> </p>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <hr>
+  <!-- Experiencia -->
+  <section class="bg-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-[var(--color2)] mb-6">Experiencia Laboral</h2>
+      <div class="space-y-6">
+        <div class="border-l-4 border-[var(--color3)] pl-4">
+          <h3 class="text-xl font-semibold">Programador Backend - Banco Industrial</h3>
+          <p class="text-sm text-gray-500">11/2022 – Actualidad | Ciudad de Guatemala</p>
+          <p>Desarrollo de soluciones backend en entorno ágil Scrum. Experto en PostgreSQL, GitHub, Docker, SonarQube, .NET Core C#, y APIs RESTful.</p>
+        </div>
+        <div class="border-l-4 border-[var(--color3)] pl-4">
+          <h3 class="text-xl font-semibold">Programador Full Stack - MAMPA</h3>
+          <p class="text-sm text-gray-500">06/2022 | Guatemala</p>
+          <p>Desarrollo integral de aplicaciones web con C# .NET Framework y ASP.NET, bases de datos en SQL Server y Azure DevOps.</p>
+        </div>
+        <div class="border-l-4 border-[var(--color3)] pl-4">
+          <h3 class="text-xl font-semibold">Development Team Leader - Canella S.A.</h3>
+          <p class="text-sm text-gray-500">08/2021 – 02/2022 | Guatemala</p>
+        </div>
+        <div class="border-l-4 border-[var(--color3)] pl-4">
+          <h3 class="text-xl font-semibold">Programador Middle - Rosul</h3>
+          <p class="text-sm text-gray-500">12/2018 – 07/2021 | Guatemala</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Educación -->
+  <section class="py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-[var(--color2)] mb-4">Formación Académica</h2>
+      <div class="space-y-6">
+      <div class="border-l-4 border-[var(--color3)] pl-4">
+          <h3 class="text-xl font-semibold">Ingeniería en Sistemas</h3>
+          <p class="text-sm text-gray-500">Universidad Mariano Gálvez (2017 – 2022)</p>
+        </div>
+        <div class="border-l-4 border-[var(--color3)] pl-4">
+          <h3 class="text-xl font-semibold">Programador Backend</h3>
+          <p class="text-sm text-gray-500">Fundación Kinal</p>
+        </div>
+        <div class="border-l-4 border-[var(--color3)] pl-4">
+          <h3 class="text-xl font-semibold">Diplomado en Ciberseguridad</h3>
+          <p class="text-sm text-gray-500">Devel Systems</p>
+        </div>
+        </div>
+    </div>
+  </section>
 
-    <h3>Lenguajes</h3>
-    <ul>
-      <li>Csharp</li>
-      <li>Asp .Net</li>
-      <li>Razor</li>
-      <li>Javascript</li>
-      <li>html</li>
-      <li>css</li>
-    </ul>
+  <!-- Experiencia -->
+  <section class="bg-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-[var(--color2)] mb-6">Idiomas</h2>
+      <div class="space-y-6">
+        <div class="border-l-4 border-[var(--color3)] pl-4">
+          <h3 class="text-xl font-semibold">Inglés</h3>
+          <p class="text-sm text-gray-500">Conversacional</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <h3>Experiencia Laboral</h3>
-    <table cellspacing="10">
-      <tr>
-        <td>Empresa</td>
-        <td>Puesto</td>
-        <td>Fecha</td>
-        <td>Ciudad</td>
-      </tr>
-      <tr>
-        <td>MAMPA</td>
-        <td>Programador full stack</td>
-        <td>junio de 2022 - Present (5 meses)</td>
-        <td>Guatemala</td>
-      </tr>
-      <tr>
-        <td>Login Solutions</td>
-        <td>Programador full stack</td>
-        <td>febrero de 2022 - mayo de 2022 (4 meses)</td>
-        <td>Guatemala</td>
-      </tr>
-    </table>
-    <h3>Skills BDD</h3>
-    <table cellspacing="10">
-      <tr>
-        <td>Lenguaje</td>
-        <td>Puntaje</td>
-      </tr>
-      <tr>
-        <td>MSSQL</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>HANA</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>ORACLE</td>
-        <td>⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>MONGO DB</td>
-        <td>⭐⭐⭐</td>
-      </tr>
-    </table>
-  </body>
+  <!-- Certificados -->
+  <section class="py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-[var(--color2)] mb-4">Certificaciones</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Integración continua - Codigo Facilito</li>
+        <li>Curso Avanzado de C# - Udemy</li>
+        <li>NSE 1 Network Security Associate - Fortinet</li>
+        <li>Curso Profesional de Git y GitHub - Platzi</li>
+        <li>Curso Básico de Python - Platzi</li>
+        <li>Fundamentos de Ingeniería de Software - Platzi</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[var(--color1)] text-white text-center py-6">
+    <p>&copy; 2025 Abner Ernesto Rodas. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
 </html>
